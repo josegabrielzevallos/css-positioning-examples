@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>My Navigation Page</title>
-    <link rel="stylesheet" href="./main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Navigation Page</title>
+  <link rel="stylesheet" href="./main.css"/>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="#"><img src="./images/dragon.png" alt="Dragon logo"></a>
-            <span class="spacer"></span>
-            <ul> 
-                <li><a href="#" class="current">Home</a></li>
-                <li><a href="./pages/about.html">About</a></li>
-                <li><a href="./pages/services.html">Service</a></li>
-                <li><a href="./pages/contact.html" >Contact</a></li>
+<body id="top">
+  <header>
+    <nav>
+      <a href="#"><img src="./images/dragon.png" alt="Dragon logo"></a>
+      <span class="spacer" aria-hidden="true"></span>
+      <ul>
+        <li><a href="#" class="current">Home</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li id="services-li">
+          <a href="./pages/services.html" aria-haspopup="true" aria-expanded="false">Services</a>
+          <ul id="services-menu" aria-label="submenu">
+            <li><a href="#">Gardening</a></li>
+            <li><a href="#">Landscaping</a></li>
+            <li><a href="#">Weed Control</a></li>
+            <li><a href="#">Tree Removal</a></li>
+          </ul>
+        </li>
+        <li><a href="./pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            </ul>
-        </nav>
-    </header>
+  <div class="wrap">
+    <main>
+      <h1 style="text-align:center;">Home Page</h1>
 
-    <div class="wrap">
-        <main>
-            <h1 style="text-align: center;">Home Page</h1>
-        </main>
+      <section class="section-a"><p>Some text</p></section>
+      <section class="section-b"><p>Some text</p></section>
+      <section class="section-a"><p>Some text</p></section>
+      <section class="section-a"><p>Some text</p></section>
+      <section class="section-a"><p>Some text</p></section>
+      <section class="section-a"><p>Some text</p></section>
+      <section class="section-a"><p>Some text</p></section>
+      <section class="section-b"><p>Some text</p></section>
+      <section class="section-b"><p>Some text</p></section>
+    </main>
 
-        <aside class="Panel-ritgh Categories">
-            <h2>Categories</h2>
-            <ul>
-                <li><a href="#">Gardenig</a></li>
-                <li><a href="#">Landscaping</a></li>
-                <li><a href="#">Weed Control</a></li>
-                <li><a href="#">Tree Removal</a></li>
+   
+    <a href="#top" class="back-to-top-fixed" aria-label="Back to top">
+      <img src="./images/uparrow.png" alt="">
+    </a>
+  </div>
 
-            </ul>
-        </aside>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="foot-links">
+        <a href="#">FAQ</a>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookies</a>
+      </div>
+      <div class="divider"></div>
+      <small>&copy; 2025 My Webpage</small>
     </div>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-inner">
-            <div class="foot-links">
-                <a href="#">FAQ</a>
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-                <a href="#">Cookies</a>
-            </div>
-            <div class="divider"></div>
-      <small>&copy 2025 My Webpage </small>
-    </footer>
+  </footer>
 </body>
 </html>
